@@ -1,6 +1,6 @@
 <?php
 $username = $_POST['username'];
-$con = new mysqli('localhost', 'root','', 'exp9');
+$con = new mysqli('localhost', 'root','', 'db');
 $sql1 = "select * from ajax where username='$username'";
 $result = $con->query($sql1);
 if ($result->num_rows > 0) {
